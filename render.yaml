@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: stock-prediction-app
+    env: docker
+    plan: starter # You can change this to a paid plan for better performance
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    disk:
+      name: models
+      mountPath: /app/models
+      sizeGB: 1
+    healthCheckPath: /_stcore/health
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"
