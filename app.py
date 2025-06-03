@@ -41,12 +41,13 @@ st.markdown("""
         background-color: #f8fff8;
     }
     .warning-box {
-        border: 2px solid #ff9800;
-        border-radius: 10px;
-        padding: 1rem;
-        margin: 1rem 0;
-        background-color: #fff8e1;
-    }
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
     .info-box {
         border: 2px solid #000000;
         border-radius: 10px;
